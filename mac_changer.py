@@ -15,9 +15,9 @@ def get_arguments():
     (options,arguments)= parser.parse_args()
 
     if not options.class_1:
-        parser.error("type PYTHON3 MAC_CHANGER.PY --HELP to get help because you are retarded")
+        parser.error("type PYTHON3 MAC_CHANGER.PY --HELP")
     elif not options.new_mac:
-         parser.error("type PYTHON3 MAC_CHANGER.PY --HELP to get help because you are retarded")
+         parser.error("type PYTHON3 MAC_CHANGER.PY --HELP ")
     return options
     
 
@@ -43,7 +43,7 @@ def get_old_mac (class_1):
         #print('your mac address has been changed to ' + options.new_mac)
         return(mac_address_result.group(0))
     else:
-        print(" \n[!] THE SELECTED INTERFACE HAs NO MAC ADDRESS VALUE (ETHER).")
+        print(" \n[!] THE SELECTED INTERFACE HAS NO MAC ADDRESS VALUE (ETHER).")
         exit()
 
 options= get_arguments()
